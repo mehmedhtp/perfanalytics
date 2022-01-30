@@ -1,0 +1,12 @@
+version: "3"
+services:
+  api:
+    build: ./perfanalytics-api
+    ports:
+      - "3000:3000"
+    container_name: perfanalytics-api
+  dashboard:
+    build: ./perfanalytics-dashboard
+    ports:
+      - "80:80"
+    container_name: perfanalytics-dashboard
